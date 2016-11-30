@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>Welcome!</title>
+  <link rel="stylesheet" type="text/css" 
+  href="/static/css/styles.css" />
+</head>
+<body>
+  <div id="loginStyle">
+    <h1 id="welcomeStyle">Welcome!</h1>
+    <div class="form-container">
+      <p class="form-header">Login</p>
+      <form method="POST" action="/login">
+        <label>Username:</label>
+        <input type="text" name="username"><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+
+        <input type="submit" value="Login">
+
+        <a href="/signup"><input type="button" value="Register"/></a>
+
+      </form>
+    </div>
+  </div>
+  <hr>
+  <div id="msgStyle">
+    <%= msg %>
+  </div>
+
+</body>
+</html>

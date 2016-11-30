@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>User Login and Sessions</title>
+  <link rel="stylesheet" type="text/css" 
+  href="/static/css/styles.css" />
+</head>
+<body>
+  <div id="indexStyle">
+    <div ng-controller="myController">
+    <h2>You are Logged In as "<%= username %>"</h2>
+
+      <hr>
+      <a href="/logout"><input type="button" value="Logout"/></a>
+      <a href="/user"><input type="button" value="Edit User"/></a>
+      
+      </div>
+    </p>
+    <hr>
+    <h1>Color: <%= color %></h1>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/static/js/my_app.js"></script>
+  </body>
+  </html>
